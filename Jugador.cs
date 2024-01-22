@@ -1,6 +1,6 @@
+
 namespace Truco
 {
-
     public class Jugador
     {
         public string Nombre { get; set; }
@@ -41,7 +41,7 @@ namespace Truco
             {
                 foreach (var valor in valores)
                 {
-                    Cartas.Add(new Carta(palo, valor));
+                    Cartas.Add(new Carta(palo.ToString(), valor.ToString()));
                 }
             }
             MezclarBaraja();
@@ -49,13 +49,22 @@ namespace Truco
 
         public void MezclarBaraja()
         {
-            Random rnd = new Random();
-            Cartas = Cartas.OrderBy(x => rnd.Next()).ToList();
+            try
+            {
+                Random rnd = new Random();
+                this.Cartas = Cartas.OrderBy(x => rnd.Next()).ToList();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public void DistribuirCartas(List<Jugador> jugadores)
         {
-            for (int i = 0; i < jugadores[0].Mano.Capacity; i++)
+            MezclarBaraja();
+            for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < jugadores.Count; j++)
                 {
@@ -65,6 +74,4 @@ namespace Truco
             }
         }
     }
-
-
 }

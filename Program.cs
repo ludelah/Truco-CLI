@@ -1,6 +1,7 @@
 ﻿
 using Truco;
 
+
 internal class Program
 {
     private static void Main(string[] args)
@@ -28,18 +29,38 @@ internal class Program
         foreach (var carta in baraja.Cartas)
             Console.WriteLine(carta.Valor + " " + carta.Palo);
 
-        escribirLinea(); // <--- Esto es solo para que se vea más lindo en la consola
+        escribirLinea();
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         //// Paso 3: Implementar la distribución de cartas a los jugadores
         baraja.DistribuirCartas(jugadores);
 
+
+        foreach (var carta in baraja.Cartas) //TODO: Esto es solo para ver que se mezcló bien la baraja (salen menos pq distribuye 3 a cada uno)
+            Console.WriteLine(carta.Valor + " " + carta.Palo);
+
+
+        escribirLinea(); 
+
+        Console.WriteLine($"{j1.Nombre} tiene: \n {j1.Mano[0].Valor} de {j1.Mano[0].Palo}, \n {j1.Mano[1].Valor} de {j1.Mano[1].Palo}, \n {j1.Mano[2].Valor} de {j1.Mano[2].Palo}");
+        Console.WriteLine($"{j2.Nombre} tiene: \n {j2.Mano[0].Valor} de {j2.Mano[0].Palo}, \n {j2.Mano[1].Valor} de {j2.Mano[1].Palo}, \n {j2.Mano[2].Valor} de {j2.Mano[2].Palo}");
+        //TODO optimizar esto
+
+        escribirLinea();
+        // SIMULACRO DE RONDA
+        /*
+        baraja.DistribuirCartas(jugadores);
+        foreach (var carta in baraja.Cartas)
+            Console.WriteLine(carta.Valor + " " + carta.Palo);
+
+        escribirLinea();
         Console.WriteLine($"{j1.Nombre} tiene: \n {j1.Mano[0].Valor} de {j1.Mano[0].Palo}, \n {j1.Mano[1].Valor} de {j1.Mano[1].Palo}, \n {j1.Mano[2].Valor} de {j1.Mano[2].Palo}");
         Console.WriteLine($"{j2.Nombre} tiene: \n {j2.Mano[0].Valor} de {j2.Mano[0].Palo}, \n {j2.Mano[1].Valor} de {j2.Mano[1].Palo}, \n {j2.Mano[2].Valor} de {j2.Mano[2].Palo}");
 
         escribirLinea(); // <--- Esto es solo para que se vea más lindo en la consola
+        */
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        
+
         //// Paso 4: Implementar la lógica del juego, incluyendo las reglas y turnos
         //JugarTruco(jugadores);
         //

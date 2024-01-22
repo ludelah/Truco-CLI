@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("trucoCLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc8a1a639dd54d9659e8a5b2e3e84fcd4f89cd56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88263201992b3b562d6300d98181939475481ef4")]
 [assembly: System.Reflection.AssemblyProductAttribute("trucoCLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("trucoCLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

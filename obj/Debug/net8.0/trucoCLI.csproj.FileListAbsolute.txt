@@ -1,0 +1,15 @@
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\bin\Debug\net8.0\trucoCLI.exe
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\bin\Debug\net8.0\trucoCLI.deps.json
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\bin\Debug\net8.0\trucoCLI.runtimeconfig.json
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\bin\Debug\net8.0\trucoCLI.dll
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\bin\Debug\net8.0\trucoCLI.pdb
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\trucoCLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\trucoCLI.AssemblyInfoInputs.cache
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\trucoCLI.AssemblyInfo.cs
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\trucoCLI.csproj.CoreCompileInputs.cache
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\trucoCLI.sourcelink.json
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\trucoCLI.dll
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\refint\trucoCLI.dll
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\trucoCLI.pdb
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\trucoCLI.genruntimeconfig.cache
+C:\Users\delah\OneDrive\repos\CSharpProjects\trucoCLI\obj\Debug\net8.0\ref\trucoCLI.dll

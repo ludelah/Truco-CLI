@@ -20,7 +20,7 @@ internal class Program
 
         Console.WriteLine($"{j1.Nombre} vs {j2.Nombre}");
 
-        escribirLinea(); // <--- Esto es solo para que se vea más lindo en la consola
+        //escribirLinea(); // <--- Esto es solo para que se vea más lindo en la consola
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         // Paso 2: Crear instancia de baraja de cartas mezclada
@@ -29,11 +29,11 @@ internal class Program
         foreach (var carta in baraja.Cartas)
             Console.WriteLine(carta.Valor + " " + carta.Palo);
 
-        escribirLinea();
+        //escribirLinea();
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         //// Paso 3: Implementar la distribución de cartas a los jugadores
-        baraja.DistribuirCartas(jugadores);
+       /* baraja.DistribuirCartas(jugadores);
 
 
         foreach (var carta in baraja.Cartas) //TODO: Esto es solo para ver que se mezcló bien la baraja (salen menos pq distribuye 3 a cada uno)
@@ -47,7 +47,10 @@ internal class Program
         //TODO optimizar esto
 
         escribirLinea();
+        */
+
         // SIMULACRO DE RONDA
+
         /*
         baraja.DistribuirCartas(jugadores);
         foreach (var carta in baraja.Cartas)
@@ -62,8 +65,10 @@ internal class Program
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         //// Paso 4: Implementar la lógica del juego, incluyendo las reglas y turnos
-        //JugarTruco(jugadores);
-        //
+        Partido partido = new Partido(jugadores, baraja);
+        partido.JugarTruco();
+
+    
         //// Paso 5: Mostrar el resultado del juego y determinar al ganador
         //MostrarResultado(jugadores);
 
@@ -72,8 +77,8 @@ internal class Program
     }
 
     static void escribirLinea()
-    {
-        Console.WriteLine(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
-    }
+{
+    Console.WriteLine(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+}
 }
 

@@ -9,7 +9,7 @@ namespace Truco
         public Jugador(string nombre)
         {
             Nombre = nombre;
-            Mano = new List<Carta>();
+            Mano = new List<Carta>(3);
         }
 
     }
@@ -55,16 +55,16 @@ namespace Truco
 
         public void DistribuirCartas(List<Jugador> jugadores)
         {
-            int i = 0;
-            foreach (var carta in Cartas)
+            for (int i = 0; i < jugadores[0].Mano.Capacity; i++)
             {
-                jugadores[i].Mano.Add(carta);
-                i++;
-                if (i == jugadores.Count)
+                for (int j = 0; j < jugadores.Count; j++)
                 {
-                    i = 0;
+                    jugadores[j].Mano.Add(Cartas[0]);
+                    Cartas.RemoveAt(0);
                 }
             }
         }
     }
+
+
 }

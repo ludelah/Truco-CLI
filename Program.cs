@@ -19,17 +19,27 @@ internal class Program
 
         Console.WriteLine($"{j1.Nombre} vs {j2.Nombre}");
 
-        Console.WriteLine(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+        escribirLinea(); // <--- Esto es solo para que se vea más lindo en la consola
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         // Paso 2: Crear instancia de baraja de cartas mezclada
         Baraja baraja = new Baraja();
 
         foreach (var carta in baraja.Cartas)
             Console.WriteLine(carta.Valor + " " + carta.Palo);
-    
+
+        escribirLinea(); // <--- Esto es solo para que se vea más lindo en la consola
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
         //// Paso 3: Implementar la distribución de cartas a los jugadores
-        //DistribuirCartas(jugadores, baraja);
-        //
+        baraja.DistribuirCartas(jugadores);
+
+        Console.WriteLine($"{j1.Nombre} tiene: \n {j1.Mano[0].Valor} de {j1.Mano[0].Palo}, \n {j1.Mano[1].Valor} de {j1.Mano[1].Palo}, \n {j1.Mano[2].Valor} de {j1.Mano[2].Palo}");
+        Console.WriteLine($"{j2.Nombre} tiene: \n {j2.Mano[0].Valor} de {j2.Mano[0].Palo}, \n {j2.Mano[1].Valor} de {j2.Mano[1].Palo}, \n {j2.Mano[2].Valor} de {j2.Mano[2].Palo}");
+
+        escribirLinea(); // <--- Esto es solo para que se vea más lindo en la consola
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        
         //// Paso 4: Implementar la lógica del juego, incluyendo las reglas y turnos
         //JugarTruco(jugadores);
         //
@@ -38,6 +48,11 @@ internal class Program
 
         Console.WriteLine("¡Gracias por jugar!");
         Console.ReadLine();
+    }
+
+    static void escribirLinea()
+    {
+        Console.WriteLine(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
     }
 }
 
